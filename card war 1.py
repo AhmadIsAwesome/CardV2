@@ -5,16 +5,18 @@ name = input("                             Hello whats your name ?              
 print("                                  Welcome " +   name)
 print("--------------------------------------------------------------------------------")
 print()
-
-decksize= input("How many cards do you want to use ?, 3 , 6, 10, 12, 24: ")
+decksize= input("How many cards do you want to use ? 3 , 6, 10, 12, 24: ")
 if decksize == '3' or decksize == '6' or decksize == '10' or decksize == '12' or decksize =='24':
-    print("Ok , So you want to play with " + decksize,  "cards!")
-    player = input("play with a friend or the computer ? [Friend : Computer]")
+    print()
+    print("So you want to play with " + decksize,  "cards!")
+    print()
+    player = input("play with a friend or the computer ? [Friend : Computer] ")
 if player == 'Friend':
+    print()
     player2 = input("What will his/her name be?:")
     print()
     print("----------------------------------------------------------------------------")
-    print("                               Hello! " + player2)
+    print("                             Welcome! " + player2)
     print("----------------------------------------------------------------------------")
     if decksize =='3':
         namecard = random.randint(1,3)
