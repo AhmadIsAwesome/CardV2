@@ -1,9 +1,9 @@
 import random
 
-print("--------------------------------------------------------------------------------")
+print("                                                                               ")
 name = input("                             Hello whats your name ?                                                                  ")
 print("                                  Welcome " +   name)
-print("--------------------------------------------------------------------------------")
+print("")
 print()
 decksize= input("How many cards do you want to use ? 3 , 6, 10, 12, 24: ")
 if decksize == '3' or decksize == '6' or decksize == '10' or decksize == '12' or decksize =='24':
@@ -15,9 +15,9 @@ if player == 'Friend':
     print()
     player2 = input("What will his/her name be?:")
     print()
-    print("----------------------------------------------------------------------------")
+    print("")
     print("                             Welcome! " + player2)
-    print("----------------------------------------------------------------------------")
+    print("")
     if decksize =='3':
         namecard = random.randint(1,3)
         print(name,"your card is", namecard)
